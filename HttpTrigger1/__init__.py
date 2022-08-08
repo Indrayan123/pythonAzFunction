@@ -19,6 +19,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function executed successfully.")
     else:
         return func.HttpResponse(
-             "$(tempval) successfully. Pass a name in the query string or in the request body for a personalized response.",
+             "We retrieved env specific value for you : $(tempval). Like what you see!",
              status_code=200
         )
